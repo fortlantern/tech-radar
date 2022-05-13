@@ -1,1 +1,107 @@
-Test
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Radar | Fort Lantern</title>
+</head>
+
+<body>
+  <svg id="radar"></svg>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="http://zalando.github.io/tech-radar/release/radar-0.6.js"></script>
+  <script>
+    radar_visualization({
+      svg_id: "radar",
+      width: 1450,
+      height: 1000,
+      colors: {
+        background: "#fff",
+        grid: "#bbb",
+        inactive: "#ddd",
+      },
+      title: "Fort Lantern Tech Radar — 2022.05",
+      quadrants: [
+        { name: "Techniques" },
+        { name: "Tools" },
+        { name: "Platforms" },
+        { name: "Languages & Frameworks" },
+      ],
+      rings: [
+        { name: "ADOPT", color: "#93c47d" },
+        { name: "TRIAL", color: "#93d2c2" },
+        { name: "ASSESS", color: "#fbdb84" },
+        { name: "HOLD", color: "#efafa9" },
+      ],
+      print_layout: true,
+      entries: [
+        {
+          quadrant: 2,
+          ring: 0,
+          label: "C4 Model",
+          active: true,
+          moved: 0,
+        },
+        {
+          quadrant: 2,
+          ring: 0,
+          label: "Continuous Integration",
+          active: true,
+          moved: 0,
+        },
+        {
+          quadrant: 2,
+          ring: 0,
+          label: "Domain Driven Design",
+          active: true,
+          moved: 0,
+        },
+        {
+          quadrant: 2,
+          ring: 0,
+          label: "Documentation as Code",
+          active: true,
+          moved: 0,
+        },
+        {
+          quadrant: 2,
+          ring: 0,
+          label: "GitHub Flow",
+          active: true,
+          moved: 0,
+        },
+        {
+          quadrant: 2,
+          ring: 0,
+          label: "TDD",
+          active: true,
+          moved: 0,
+        },
+        {
+          quadrant: 2,
+          ring: 1,
+          label: "Event Modeling",
+          active: true,
+          moved: 0,
+        },
+        {
+          quadrant: 2,
+          ring: 1,
+          label: "Event Storming",
+          active: true,
+          moved: 0,
+        },
+        {
+          quadrant: 3,
+          ring: 3,
+          label: "PHP",
+          active: true,
+          moved: 0,
+        }
+      ],
+    });
+  </script>
+</body>
+</html>
